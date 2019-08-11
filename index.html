@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sally Student Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <header>
+      <h1>Sally Student's Resume</h1>
+    </header>
+
+    <main id="main">
+  
+    </main>
+
+    <address id="address">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg">
+      <h2>Contact for Sally Student</h2>
+      <p>email: <a href="sally.student99@junkmail.com">sally.student99@junkmail.com</a></p>
+      <p>phone number: (123)-456-7890
+    </address>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Education() {
+           return ( <div id="main">
+                <section id="history">
+                <h2>Education</h2>
+                <p>High School: Calallen High School.</p>
+                <p>College: University of Texas.</p>
+                </section>
+                <Employment />
+                <address />
+                </div>
+                );
+        };
+        function Employment() {
+            return <section id="employment">
+                <h2>Employment History</h2>
+                <h3>1. The Only Joint In Town, Waitress, January 2012 - november 2015.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+                <h3>2. Alamo Drafthouse, server, november 2015 - current.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
+                </section>
+        };
+        function Address() {
+            return <address id="address">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"></img>
+                <h2>Contact for Sally Student</h2>
+                <p>email: <a href="sally.student99@junkmail.com">sally.student99@junkmail.com</a></p>
+                <p>phone number: (123)-456-7890</p>
+                </address>
+        };
+
+        ReactDOM.render(<Education />, document.querySelector('#main'));        
+
+    </script>
+  </body>
+</html>
